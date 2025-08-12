@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Николай Abcdef Fullstack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/site_icon.png">
+    <script src="assets/script/CardLoaderAnim.js"></script>
+    <script src="assets/script/ModalForm.js"></script>
+    <script src="assets/script/ScrollAnimation.js"></script>
+</head>
+<body>
+    <div class="background-glow-yellow"></div>
+    <div class="background-glow"></div>
+    <header>
+        <h1 class="title">abcdef</h1>
+        <nav class="menu">
+            <ul>
+                <li class="home-menu"><a href="#">Home</a></li>
+                <li class="about-menu"><a href="#">About</a></li>
+                <li class="work-menu"><button onclick="scrollToWork()">Work</button></li>
+                <li class="explore"><a href="#" id="exploreButton">Explore</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about">
+        <h1>Nikolay Olegovich</h1>
+        <img src="assets/img/photo.gif" alt="">
+        <p class="subtitle">Fullstack Developer</p>
+        <div class="about-text">
+            <p>Welcome to my website! My name is Nikolay, and I am a Fullstack developer</p>
+            <p>I enjoy learning and developing new skills, as well as creating websites. (Cool)</p>
+            <p>I write high-quality code and have expertise in HTML, CSS, PHP, JavaScript</p>
+        </div>
+        <button onclick="scrollToBottom()">Go down</button>
+    </section>
+    <hr class="styled-line-transition" />
+    <section class="insights">
+        <div id="bottom"></div>
+        <h1>Achievements in the code</h1>
+        <p class="insights-subtitle">My achievements in the coding universe, as I started, so I will continue! We do, we do not stop!</p>
+        <div class="cards-container">
+            <!-- Карточки -->
+            <div class="card">
+                <img src="assets/img/github.gif" alt="" />
+                <h2>My account GitHub, my works</h2>
+                <p>You can check out my most recent projects there!</p>
+                <a href="https://github.com/cryptophpman" class="button">Go to github</a>
+            </div>
+            <div class="card">
+                <img src="assets/img/yt_work.gif" alt="" />
+                <h2>My YouTube Blog and lessons</h2>
+                <p>I make videos about IT, discuss news, and have a blog</p>
+                <a href="https://youtu.be" class="button">Go to youtube</a>
+            </div>
+            <div class="card">
+                <img src="assets/img/image.gif" alt="" />
+                <h2>Best server Minecraft Bedrock</h2>
+                <p>VinLond - new Legend for Minecraft Bedrock! I guarantee your safety</p>
+                <a href="https://vinlond.shop" class="button">Play</a>
+            </div>
+        </div>
+    </section>
+    <hr class="styled-line" />
+    <section class="creations">
+        <div id="work"></div>
+        <h1>Last blog videos</h1>
+        <div class="creations-text">
+            <p>The most recent videos posted on the site,</p>
+            <p>There are no age restrictions, and it is available to all users</p>
+        </div>
+        <div class="video-cards">
+            <div class="card-video">
+                <video controls width="100%" poster="assets/img/video-placeholder.png">
+                    <source src="assets/videos/ui.MOV" type="video/mp4" />
+                    Ваш браузер не поддерживает тег video.
+                </video>
+                <h3>Что такое UI и UX?</h3>
+            </div>
+            <div class="card-video">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                <h3>Coming Soon...</h3>
+            </div>
+            <div class="card-video">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                <h3>Coming Soon...</h3>
+            </div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to the Explore section</h2>
+            <p>You can contact me using the links below</p>
+            <div class="links-container">
+                <a href="https://www.behance.net/deluuxminecra"><img class="behance" src="assets/img/behance.jpg" alt=""></a>
+                <a href="https://vk.com/nikolayx_bro"><img class="vk" src="assets/img/vk.webp" alt=""></a>
+                <a href="https://t.me/desktop666"><img class="tg" src="assets/img/tg.webp" alt=""></a>
+            </div>
+            <button class="close-btn" id="closeModal">Exit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About me</h3>
+                <p>I provide Web development and IT services</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacts</h3>
+                <p>><a href="mailto: whyn.nswag@gmail.com" style="text-decoration: none;">Email: whyn.mswag@gmail.com</a> </p>
+            </div>
+            <div class="footer-column">
+                <h3>Social network</h3>
+                <a href="https://vk.com/nikolayx_bro">VK (RU) clickable</a><br>
+                <a href="https://t.me/desktop666">Telegram clickable</a><br>
+                <a href="https://www.behance.net/deluuxminecra">Behance clickable</a><br>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
